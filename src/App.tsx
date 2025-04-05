@@ -17,7 +17,7 @@ const App = () => {
 
   const isLoser = incorrectLetters.length >= 6
   const isWinner = wordToGuess.split("").every(letter => guessedWords.includes(letter))
-console.log(wordToGuess)
+  
   const addGuessWord= useCallback((letter: string) =>{
     if(guessedWords.includes(letter) || isLoser || isWinner ) return letter
 
